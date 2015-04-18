@@ -7,15 +7,18 @@ using namespace std;
 
 int main()
 {
-	int i, j, nArrIndex, mArrIndex;
+	int i, j, nArrIndex, mArrIndex, maxSize;
 	int arrN[N] = { 1, 2, 3, 4, 5, 6, 7, 16 };
 	int arrM[M] = { 9, 10, 11, 12, 13, 14, 15, 17, 18, 19, 20, 21, 22, 23, 24, 25 };
 	nArrIndex =  N / 2;//************************
 	mArrIndex = M / 2;
+	if (N > M)
+		maxSize = N;
+	else
+		maxSize = M;
 
 
-
-	for (i = N / 2, j = M / 2; ((i > 1) && (j>1)); i /= 2, j /= 2)
+	for (i = N / 2, j = M / 2, maxSize = maxSize/2; maxSize>1; i /= 2, j /= 2, maxSize /= 2)
 	{
 		if (arrN[nArrIndex] < arrM[mArrIndex])
 		{
