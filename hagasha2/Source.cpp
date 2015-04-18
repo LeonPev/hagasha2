@@ -34,13 +34,13 @@ int main()
 				mArrIndex += j / 2;
 		}
 	}
-	if (arrN[nArrIndex] < arrM[mArrIndex])
+	if (arrN[nArrIndex] > arrM[mArrIndex])
 	{
-		cout << "found in M index: " << mArrIndex + 1 << " result : " << arrM[mArrIndex + 1] << endl;
+		cout << "found in M index: " << mArrIndex - 1 << " result : " << arrM[mArrIndex - 1] << endl;
 	}
 	else
 	{
-		cout << "found in N index: " << nArrIndex + 1 << " result : " << arrN[nArrIndex + 1] << endl;
+		cout << "found in N index: " << nArrIndex - 1 << " result : " << arrN[nArrIndex - 1] << endl;
 	}
 	cin >> i;
 	return 0;
