@@ -11,7 +11,6 @@ int main()
 	int arrN[N] = { 1, 2, 3, 4, 5, 6, 7, 8 };
 	int arrM[M] = { 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24 };
 	nArrIndex = mArrIndex = N / 2;
-	center = (M + N) / 2;
 
 	for (i = N/2; i > 1; i/=2)
 	{
@@ -22,8 +21,8 @@ int main()
 		}
 		else
 		{
-			nArrIndex += i/2;
-			mArrIndex -= i/2;
+			nArrIndex -= i/2;
+			mArrIndex += i/2;
 		}
 	}
 	if (arrN[nArrIndex] < arrM[mArrIndex])
