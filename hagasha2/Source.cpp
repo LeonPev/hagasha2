@@ -15,7 +15,7 @@ int main()
 
 
 
-	for (i = N / 2, j = M / 2; i > 1; i /= 2, j /= 2)
+	for (i = N / 2, j = M / 2; ((i > 1) && (j>1)); i /= 2, j /= 2)
 	{
 		if (arrN[nArrIndex] < arrM[mArrIndex])
 		{
