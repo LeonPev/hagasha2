@@ -33,11 +33,11 @@ int main()
 	}
 	if (arrN[nArrIndex] < arrM[mArrIndex])
 	{
-		cout << "index: " << mArrIndex - 1 << " result : " << arrM[mArrIndex - 1] << endl;
+		cout << "index: " << mArrIndex + 1 << " result : " << arrM[mArrIndex - 1] << endl;
 	}
 	else
 	{
-		cout << "index: " << nArrIndex - 1 << " result : " << arrN[nArrIndex - 1] << endl;
+		cout << "index: " << nArrIndex + 1 << " result : " << arrN[nArrIndex - 1] << endl;
 	}
 	cin >> i;
 	return 0;
