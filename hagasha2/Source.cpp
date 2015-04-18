@@ -13,6 +13,7 @@ int main()
 	nArrIndex = mArrIndex = N / 2;
 
 
+
 	for (i = N / 2, j = M / 2; i > 1; i /= 2, j /= 2)
 	{
 		if (arrN[nArrIndex] < arrM[mArrIndex])
