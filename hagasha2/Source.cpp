@@ -9,8 +9,7 @@ int main()
 {
 	int i, j, nArrIndex, mArrIndex, maxSize;
 	int arrN[N] = { 1, 2, 3, 4, 5, 6, 7, 16 };
-	int arrM[M] = { 9, 10, 11, 12, 13, 14, 15, 17, 18, 19, 20, 21, 22, 23, 24, 25 };
-	nArrIndex =  N / 2;//************************
+	int arrM[M] = { 9, 10, 11, 12, 13, 14, 15, 17 };
 	mArrIndex = M / 2;
 	if (N > M)
 		maxSize = N;
