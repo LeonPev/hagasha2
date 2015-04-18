@@ -8,8 +8,8 @@ using namespace std;
 int main()
 {
 	int i, j, nArrIndex, mArrIndex;
-	int arrN[N] = { 1, 2, 3, 4, 5, 6, 7, 8 };
-	int arrM[M] = { 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24 };
+	int arrN[N] = { 1, 2, 3, 4, 5, 6, 7, 16 };
+	int arrM[M] = { 9, 10, 11, 12, 13, 14, 15, 17, 18, 19, 20, 21, 22, 23, 24, 25 };
 	nArrIndex =  N / 2;//************************
 	mArrIndex = M / 2;
 
@@ -34,11 +34,11 @@ int main()
 	}
 	if (arrN[nArrIndex] < arrM[mArrIndex])
 	{
-		cout << "index: " << mArrIndex + 1 << " result : " << arrM[mArrIndex + 1] << endl;
+		cout << "found in M index: " << mArrIndex + 1 << " result : " << arrM[mArrIndex + 1] << endl;
 	}
 	else
 	{
-		cout << "index: " << nArrIndex + 1 << " result : " << arrN[nArrIndex + 1] << endl;
+		cout << "found in N index: " << nArrIndex + 1 << " result : " << arrN[nArrIndex + 1] << endl;
 	}
 	cin >> i;
 	return 0;
