@@ -7,22 +7,26 @@ using namespace std;
 
 int main()
 {
-	int i, nArrIndex, mArrIndex;
+	int i, j, nArrIndex, mArrIndex;
 	int arrN[N] = { 1, 2, 3, 4, 5, 6, 7, 8 };
 	int arrM[M] = { 9, 10, 11, 12, 13, 14, 15, 16 };
 	nArrIndex = mArrIndex = N / 2;
 
-	for (i = N/2; i > 1; i/=2)
+	for (i = N / 2, j = M / 2; i > 1; i /= 2, j /= 2)
 	{
 		if (arrN[nArrIndex] < arrM[mArrIndex])
 		{
-			nArrIndex += i/2;
-			mArrIndex -= i/2;
+			if (nArrIndex + i / 2 < N)
+				nArrIndex += i / 2;
+			if (mArrIndex - j / 2 > 0)
+				mArrIndex -= j / 2;
 		}
 		else
 		{
-			nArrIndex += i/2;
-			mArrIndex -= i/2;
+			if (nArrIndex - i / 2 > 0)
+				nArrIndex -= i / 2;
+			if (mArrIndex + j / 2 < M)
+				mArrIndex += j / 2;
 		}
 	}
 	if (arrN[nArrIndex] < arrM[mArrIndex])
