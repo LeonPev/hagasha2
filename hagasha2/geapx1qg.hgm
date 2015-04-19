@@ -2,13 +2,13 @@
 
 using namespace std;
 
-#define N 8
+#define N 12
 #define M 8
 
 int main()
 {
 	int i, j, mArrIndex, maxSize, nArrIndex;
-	int arrN[N] = { 1,2,3,4,5,6,16,21};
+	int arrN[N] = { 1, 2, 3, 4, 5, 6, 7,16, 18,19,20,21};
 	int arrM[M] = { 9, 10, 11, 12, 13, 14, 15, 17 };
 	mArrIndex = M / 2;
 	nArrIndex = N / 2;
@@ -35,7 +35,7 @@ int main()
 				mArrIndex += j / 2;
 		}
 	}
-	if (arrN[N - 1] < arrM[0])
+	if (arrN[N - 1] > arrM[0])
 	{
 		if (arrN[nArrIndex] > arrM[mArrIndex])
 		{
