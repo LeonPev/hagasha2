@@ -37,11 +37,11 @@ int main()
 	}
 	if (arrN[nArrIndex] > arrM[mArrIndex])
 	{
-		cout << "found in M index: " << mArrIndex - 1 << " result : " << arrM[mArrIndex - 1] << endl;
+		cout << "found in M index: " << mArrIndex << " result : " << arrM[mArrIndex] << endl;
 	}
 	else
 	{
-		cout << "found in N index: " << nArrIndex - 1 << " result : " << arrN[nArrIndex - 1] << endl;
+		cout << "found in N index: " << nArrIndex << " result : " << arrN[nArrIndex] << endl;
 	}
 	cin >> i;
 	return 0;
