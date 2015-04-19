@@ -15,7 +15,6 @@ int main()
 	if (N == M)
 	{
 		maxSize = N;
-		//seif alef
 		for (i = N / 2, j = M / 2, maxSize = maxSize / 2; maxSize > 1; i /= 2, j /= 2, maxSize /= 2)
 		{
 			if (arrN[nArrIndex] < arrM[mArrIndex])
@@ -58,56 +57,5 @@ int main()
 		}
 		cin >> i;
 	}
-	else
-	{
-		i = j = 0;
-		//seif bet
-		while (failed < (N + M) / 2)
-		{
-			if (arrN[nArrIndex] < arrM[mArrIndex])
-			{
-				if (nArrIndex + i / 2 < N)
-					nArrIndex += i / 2;
-				if (mArrIndex - j / 2 > 0)
-					mArrIndex -= j / 2;
-			}
-			else
-			{
-				if (nArrIndex - i / 2 > 0)
-					nArrIndex -= i / 2;
-				if (mArrIndex + j / 2 < M)
-					mArrIndex += j / 2;
-			}
-			failed += i / 2 + j / 2;
-			i /= 2;
-			j /= 2;
-		}
-		if (arrN[N - 1] < arrM[0])
-		{
-			if (arrN[nArrIndex] > arrM[mArrIndex])
-			{
-				cout << "found in M index: " << mArrIndex << " result : " << arrM[mArrIndex] << endl;
-			}
-			else
-			{
-				cout << "found in N index: " << nArrIndex - 1 << " result : " << arrN[nArrIndex - 1] << endl;
-			}
-		}
-		else
-		{
-
-			if (arrN[nArrIndex] < arrM[mArrIndex])
-			{
-				cout << "found in M index: " << mArrIndex - 1 << " result : " << arrM[mArrIndex - 1] << endl;
-			}
-			else
-			{
-				cout << "found in N index: " << nArrIndex - 1 << " result : " << arrN[nArrIndex - 1] << endl;
-			}
-		}
-		cin >> i;
-	}
-
-	
 	return 0;
 }
